@@ -60,6 +60,14 @@ $(document).ready(function(){
 		}
 
 		advance();
+		$('#btn-prev').click(function(){
+				if(currentIndex > 0)
+					move(currentIndex - 1);
+		});
+		$('#btn-next').click(function(){
+				if(currentIndex < $slide.length - 1)
+					move(currentIndex + 1);
+		});
 	});
 
 	/*-----STICKY NAV-----*/
